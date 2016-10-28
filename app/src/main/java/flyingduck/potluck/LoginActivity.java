@@ -3,6 +3,7 @@ package flyingduck.potluck;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -26,6 +27,7 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -33,6 +35,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static android.Manifest.permission.READ_CONTACTS;
+
 
 /**
  * A login screen that offers login via email/password.
@@ -87,6 +90,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onClick(View view) {
                 attemptLogin();
+            }
+        });
+
+        CheckBox savePassword = (CheckBox) findViewById(R.id.save_password);
+        savePassword.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                saveLogin();
             }
         });
 
@@ -190,14 +201,24 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }
     }
 
+    /**
+     *saveInfo is tied to the login screen check box.
+     * If user checks the box it saves the info of the user so they no longer have to type in info
+     * for logging in. If the box is unchecked it deletes the saved file for the password login
+     *
+     */
+    private void saveLogin(){
+        //TODO: Replace with logic for saving login
+    }
+
     private boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
-        return email.contains("@");
+        return email.contains("@") && email.contains(".");
     }
 
     private boolean isPasswordValid(String password) {
         //TODO: Replace this with your own logic
-        return password.length() > 10;
+        return password.length() > 4;
     }
 
     /**
@@ -324,7 +345,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
 
             // TODO: register the new account here.
-            return true;
+            // TODO: change logic when decision about adding new accounts is done
+            return false;
         }
 
         @Override
@@ -333,6 +355,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
 
             if (success) {
+                Intent intent = new Intent(mPasswordView.getContext(), MainActivity.class);
+                startActivity(intent);
                 finish();
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));

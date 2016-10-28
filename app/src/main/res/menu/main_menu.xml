@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id ="@+id/create_potluck"
+        android:title="@string/create_potluck"/>
+    <item android:id="@+id/my_potlucks"
+        android:title="@string/my_potlucks"/>
+    <item android:id="@+id/open_contacts"
+        android:title="@string/open_contacts"/>
+    <item android:id="@+id/my_info"
+        android:title="@string/my_info"/>
+    <item android:id="@+id/favorite_dishes"
+        android:title="@string/favorite_dishes"/>
+    <item android:id="@+id/log_out"
+        android:title="@string/log_out"/>
+</menu>

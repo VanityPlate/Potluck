@@ -14,4 +14,13 @@
         completions."
     </string>
     <string name="save_password">Save Login</string>
+
+    <!-- String related to main menu -->
+    <string name="create_potluck">Create Potluck</string>
+    <string name="my_potlucks">My Potlucks</string>
+    <string name="open_contacts">Contacts</string>
+    <string name="my_info">My Info</string>
+    <string name="favorite_dishes">Favorite Dishes</string>
+    <string name="log_out">Log Out</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>
