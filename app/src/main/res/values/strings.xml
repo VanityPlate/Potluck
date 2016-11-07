@@ -1,6 +1,29 @@
 <resources>
     <string name="app_name">Potluck</string>
 
+    <!-- Strings related to ContactInfo -->
+    <string name="contact_info">Contact Info</string>
+    <string name="my_contact_info">My Info</string>
+
+    <!-- Strings related to contacts -->
+    <string name="contacts">Contacts</string>
+
+    <!-- Strings related to Dish -->
+    <string name="dish">Dish</string>
+
+    <!-- Strings related to FavoriteDishes -->
+
+    <!-- Strings related to Invited Potluck -->
+    <string name="invited_potluck">Upcoming Potluck</string>
+
+    <!-- Strings related to My Potlucks -->
+
+    <!-- Strings related to Owned Potluck -->
+    <string name="owned_potluck">Upcoming Potluck</string>
+
+    <!-- Strings related to main page-->
+    <string name="main_label">Home Page</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -13,9 +36,11 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="login_title"></string>
     <string name="save_password">Save Login</string>
 
     <!-- String related to main menu -->
+    <string name="home_page">Home Page</string>
     <string name="create_potluck">Create Potluck</string>
     <string name="my_potlucks">My Potlucks</string>
     <string name="open_contacts">Contacts</string>

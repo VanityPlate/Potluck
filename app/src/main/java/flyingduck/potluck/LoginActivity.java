@@ -85,6 +85,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
+        setTitle(getString(R.string.login_title));
+
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -219,6 +221,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private boolean isPasswordValid(String password) {
         //TODO: Replace this with your own logic
         return password.length() > 4;
+    }
+
+    //FUNCTION FOR LOGING OUT OF CONNECTION
+    protected static boolean logOut(){
+        //TODO: Add logic for loging out of a connection
+        return true;
     }
 
     /**

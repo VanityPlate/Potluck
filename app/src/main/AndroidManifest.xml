@@ -25,7 +25,14 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MyPotlucks" />
+        <activity android:name=".Contacts" />
+        <activity android:name=".FavoriteDishes" />
+        <activity android:name=".ContactInfo" />
+        <activity android:name=".OwnedPotluck" />
+        <activity android:name=".InvitedPotluck" />
+        <activity android:name=".Dish"></activity>
     </application>
 
 </manifest>

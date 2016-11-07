@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home_page"
+        android:title="@string/home_page"
+        android:onClick="menuHomePage"/>
     <item android:id ="@+id/create_potluck"
-        android:title="@string/create_potluck"/>
+        android:title="@string/create_potluck"
+        android:onClick="menuCreatePotluck"/>
     <item android:id="@+id/my_potlucks"
-        android:title="@string/my_potlucks"/>
+        android:title="@string/my_potlucks"
+        android:onClick="menuMyPotlucks"/>
     <item android:id="@+id/open_contacts"
-        android:title="@string/open_contacts"/>
+        android:title="@string/open_contacts"
+        android:onClick="menuContacts"/>
     <item android:id="@+id/my_info"
-        android:title="@string/my_info"/>
+        android:title="@string/my_info"
+        android:onClick="menuMyInfo"/>
     <item android:id="@+id/favorite_dishes"
-        android:title="@string/favorite_dishes"/>
+        android:title="@string/favorite_dishes"
+        android:onClick="menuFavoriteDishes"/>
     <item android:id="@+id/log_out"
-        android:title="@string/log_out"/>
+        android:title="@string/log_out"
+        android:onClick="menuLogOut"/>
 </menu>
